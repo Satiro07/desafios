@@ -7,9 +7,16 @@ for i in range(0, quant_robos):
     robos.append(sequencia)
 for robo in robos:
     cont = 1
-    for i in range(0, len(robo)):
-        if robo[i] < robo[cont]:
-            pass
-        else:
-            print('NORMAL')
+    verdade = False
+    if robo[0] < robo[cont]:
+        for i in range(1, len(robo)+1):
+            cont += 1
+            if robo[i] < robo[cont]:
+                verdade = True
+            else:
+                verdade = True
+    if verdade == True:
+        print('Certo')
+    else:
+        print('NORMAL')
 
