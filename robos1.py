@@ -8,7 +8,9 @@ for i in range(0, quant_robos):
 for robo in robos:
     cont = 1
     verdade = False
-    
+    if len(robo) < 3:
+        print(f'{robo} - Menos de 3 números!')
+        continue
     if robo[0] < robo[cont]:
         subida = 0
         for i in range(1, len(robo)-1):
