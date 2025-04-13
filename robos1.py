@@ -26,8 +26,7 @@ for robo in robos:
                 break
             elif robo[i] > robo[cont]:
                 subida += 1
-                verdade = True
-                
+                verdade = True     
     if verdade == True:
         print('SUPERCHARGED')
     else:
