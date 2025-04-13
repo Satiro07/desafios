@@ -12,7 +12,7 @@ for robo in robos:
         print(f'{robo} - Menos de 3 números!')
         continue
     if robo[0] < robo[cont]:
-        subida = 0
+        quantidade_subidas = 0
         for i in range(1, len(robo)-1):
             cont += 1
             if robo[-2] < robo[-1]:
@@ -20,14 +20,14 @@ for robo in robos:
                 break
             if robo[i] < robo[cont]:
                 verdade = True
-                if subida >= 1:
+                if quantidade_subidas >= 1:
                     verdade = False
                     break
             elif robo[i] == robo[cont]:
                 verdade = False
                 break
             elif robo[i] > robo[cont]:
-                subida += 1
+                quantidade_subidas += 1
                 verdade = True     
     if verdade == True:
         print('SUPERCHARGED')
