@@ -12,6 +12,7 @@ for i in matriz:
 num = int(input('Diga um número: '))
 pos_linha = int(input('Em qual linha deseja colocar o número? '))-1
 pos_coluna = int(input('Coluna que deseja adicionar o número: '))-1
+
 matriz[pos_linha][pos_coluna] = num
 for i in matriz:
     print(i)
