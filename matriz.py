@@ -11,3 +11,23 @@ for i in range(0,linhas):
 
 for i in matriz:
     print(i)
+
+print()
+print('Matriz transposta:')
+
+c = 0
+for i in matriz:
+    for x in i:
+        c += 1
+    break
+mt = []
+for x in range(0, c):
+    mt1 = []
+    cont = 0
+    for y in matriz:
+        mt1.append(matriz[cont][x])
+        cont += 1
+    mt.append(mt1)
+for i in mt:
+    print(i)
+    
