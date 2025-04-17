@@ -10,11 +10,8 @@ for i in matriz:
     print(i)
 
 num = int(input('Diga um número: '))
-pos_linha = int(input('Em qual linha deseja colocar o número? '))
-pos_coluna = int(input('Coluna que deseja adicionar o número: '))
-
-if matriz[pos_linha-1][pos_coluna-1] == 0:
-    matriz[pos_linha-1][pos_coluna-1] = num
-
+pos_linha = int(input('Em qual linha deseja colocar o número? '))-1
+pos_coluna = int(input('Coluna que deseja adicionar o número: '))-1
+matriz[pos_linha][pos_coluna] = num
 for i in matriz:
     print(i)
